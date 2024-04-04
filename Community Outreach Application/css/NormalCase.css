@@ -1,0 +1,26 @@
+﻿/* Style for the custom CheckBox container */
+.custom-checkbox {
+	display: inline-block;
+}
+
+	/* Hidden default checkbox input */
+	.custom-checkbox input[type="checkbox"] {
+		display: none;
+	}
+
+	/* Custom checkbox design */
+	.custom-checkbox label {
+		display: inline-block;
+		padding: 10px 20px; /* Adjust padding to control button size */
+		background-color: #ccc;
+		border: none;
+		border-radius: 11px;
+		cursor: pointer;
+		transition: background-color 0.3s;
+	}
+
+	/* Checked state */
+	.custom-checkbox input[type="checkbox"]:checked + label {
+		background-color: #007bff; /* Change to the desired color */
+		color: white; /* Change text color when checked */
+	}

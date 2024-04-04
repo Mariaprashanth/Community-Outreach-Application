@@ -1,0 +1,344 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+	<meta charset="utf-8">
+
+	<title>SN Community Outreach</title>
+	<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
+	<style>
+		@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+
+.btn {
+	position: absolute;
+	top: 29px;
+	left: 45px;
+	height: 45px;
+	width: 45px;
+	text-align: center;
+	background: #1b1b1b;
+	border-radius: 3px;
+	cursor: pointer;
+	transition: left 0.4s ease;
+}
+
+	.btn.click {
+		left: 260px;
+	}
+
+	.btn span {
+		color: white;
+		font-size: 28px;
+		line-height: 45px;
+	}
+
+	.btn.click span:before {
+		content: '\f00d';
+	}
+
+.sidebar {
+	position: fixed;
+	width: 250px;
+	height: 100%;
+	left: -250px;
+	background: #1b1b1b;
+	transition: left 0.4s ease;
+}
+
+	.sidebar.show {
+		left: 0px;
+	}
+
+	.sidebar .text {
+		color: white;
+		font-size: 25px;
+		font-weight: 600;
+		line-height: 65px;
+		text-align: center;
+		background: #1e1e1e;
+		letter-spacing: 1px;
+		width: 115%;
+		margin-left: -37px;
+	}
+
+nav ul {
+	background: #1b1b1b;
+	height: 102%;
+	width: 71%;
+	list-style: none;
+	margin-left: -121px;
+}
+
+	nav ul li {
+		line-height: 54px;
+		border-top: 1px solid rgba(255,255,255,0.1);
+	}
+
+		nav ul li:last-child {
+			border-bottom: 1px solid rgba(255,255,255,0.05);
+		}
+
+		nav ul li a {
+			position: relative;
+			color: white;
+			text-decoration: none;
+			font-size: 13px;
+			padding-left: 92px;
+			font-weight: 500;
+			display: block;
+			width: 137%;
+			border-left: 3px solid transparent;
+		}
+
+		nav ul li.active a {
+			color: cyan;
+			background: #1e1e1e;
+			border-left-color: cyan;
+		}
+
+		nav ul li a:hover {
+			background: #1e1e1e;
+		}
+
+	nav ul ul {
+		position: static;
+		display: none;
+	}
+
+	nav ul .feat-show.show {
+		display: block;
+	}
+
+	nav ul .serv-show.show1 {
+		display: block;
+	}
+
+	nav ul ul li {
+		line-height: 42px;
+		border-top: none;
+	}
+
+		nav ul ul li a {
+			font-size: 17px;
+			color: #e6e6e6;
+			padding-left: 80px;
+		}
+
+	nav ul li.active ul li a {
+		color: #e6e6e6;
+		background: #1b1b1b;
+		border-left-color: transparent;
+	}
+
+	nav ul ul li a:hover {
+		color: cyan !important;
+		background: #1e1e1e !important;
+	}
+
+	nav ul li a span {
+		position: absolute;
+		top: 50%;
+		right: 20px;
+		transform: translateY(-50%);
+		font-size: 22px;
+		transition: transform 0.4s;
+	}
+
+		nav ul li a span.rotate {
+			transform: translateY(-50%) rotate(-180deg);
+		}
+
+.content {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	color: #202020;
+	z-index: -1;
+	text-align: center;
+}
+
+	.content .header {
+		font-size: 45px;
+		font-weight: 600;
+	}
+
+	.content p {
+		font-size: 30px;
+		font-weight: 500;
+	}
+
+
+
+	</style>
+
+	<style>
+		.navbarb {
+			height: 91px;
+			width: 100%;
+			background-color: #23a7b3;
+			display: flex;
+			flex-direction: row;
+			justify-content: space-around;
+			text-align: center;
+			color: #555b6e;
+		}
+
+			.navbarb h4 {
+				padding: 4px;
+				font-size: 25px;
+				color: white;
+				margin-left: 21%;
+			}
+
+			.navbarb span {
+				padding: 6px;
+			}
+
+		#usr_name {
+			color: white;
+			font-size: 17px;
+			margin-top: 52px;
+			margin-top: 26px;
+		}
+
+		@media screen and (max-width: 1050px) {
+			.container {
+				grid-gap: 5rem;
+			}
+		}
+
+	</style>
+
+
+    <style>
+        .sidebar {
+            height: 1000px;
+            overflow: hidden;
+        }
+
+        .menu-container {
+            height: 76%;
+            overflow: auto;
+        }
+    </style>
+
+     <style>
+        body {
+            position: relative;
+            min-height: 100vh; 
+        }
+
+        footer {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            background-color: #333; /* Background color */
+            color: #fff; /* Text color */
+            padding: 10px; /* Add padding for spacing */
+        }
+    </style>
+    
+
+
+	<asp:ContentPlaceHolder ID="head" runat="server">
+	</asp:ContentPlaceHolder>
+</head>
+<body>
+
+	<form id="form1" runat="server">
+		<input id="HDNuserid" type="hidden" runat="server" />
+		<nav class="navbarb  ">
+
+					<h4 style="text-align:center">COMMUNITY OUTREACH - SANKARA NETHRALAYA </h4>
+
+					<img style="margin-left: 7%;" height="70px" width="70px"  src="img/man_pic.png" />
+
+					<asp:Label ID="usr_name" runat="server" Text=""></asp:Label>
+
+		</nav>
+
+		<div class="btn">
+         <span class="fas fa-bars"></span>
+      </div>
+      <nav class="sidebar">
+         <div class="text">
+            Side Menu
+         </div>
+          <div class="menu-container">
+         <ul>
+           
+              <li>
+                  <a href="GovernmentDOC_Upload.aspx" class="feat-btn"> Project Documents</a>
+              </li>
+            <li>
+               <a href="school_dtls.aspx" class="feat-btn">School details</a>
+        
+            </li>
+               <li>
+                 <a href="Student_details.aspx" class="serv-btn">Student details</a>
+             </li>
+            <li>
+               <a href="Primaryscr.aspx" >Basic vision screening</a>
+            </li>
+            <li><a href="DETAILEXAM.aspx">Detailed eye examination</a></li>
+
+			  <li><a href="CASESUMMARY_PG.aspx">Case summary </a></li>
+
+            <li><a href="#">Spectacle dispensing</a></li>
+
+            <li><a href="#">Referral details</a></li>
+
+            <li><a href="#">Spectacle Compliance</a></li>
+
+			 <li><a href="#">Referral Compliance</a></li>
+
+			 <li><a href="#">Student Search</a></li>
+
+			 <li><a href="reportpage.aspx"> Overall Reports</a></li>
+
+             <li><a href="Final_Report.aspx"> Final Reports</a></li>
+
+             <li><a href="datamigration.aspx">Data migration</a></li>
+
+			 <li><a href="LOGINPG.aspx">LOG OUT </a></li>
+         </ul>
+              </div>
+      </nav>
+      <script>
+         $('.btn').click(function(){
+           $(this).toggleClass("click");
+           $('.sidebar').toggleClass("show");
+         });
+           $('.feat-btn').click(function(){
+             $('nav ul .feat-show').toggleClass("show");
+             $('nav ul .first').toggleClass("rotate");
+           });
+           $('.serv-btn').click(function(){
+             $('nav ul .serv-show').toggleClass("show1");
+             $('nav ul .second').toggleClass("rotate");
+           });
+           $('nav ul li').click(function(){
+             $(this).addClass("active").siblings().removeClass("active");
+           });
+      </script>
+
+		<asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+		</asp:ContentPlaceHolder>
+
+	</form>
+
+
+    <footer>
+        Designed & Maintained by Sankara Nethralaya IT Team.
+    </footer>
+
+
+</body>
+
+</html>

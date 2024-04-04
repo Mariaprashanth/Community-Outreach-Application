@@ -1,0 +1,492 @@
+﻿body 
+{
+    /*background-color:#f1e0c6;*/
+    background-color:#f1e0c6;
+   	font-family:Arial,Verdana,Helvetica,Sans-Serif;
+	font-size:8pt;
+	margin-left:0;
+	margin-right:0;
+	margin-top:0;
+	margin-bottom:0;
+	font-weight:bold;
+}
+.GroupHeader
+{
+	background-image:url(Images/TitleHeaderV.gif);
+	background-repeat:no-repeat;	
+	padding:5px; 
+	font-weight:bold;
+	font-family:Arial;
+	font-size:8pt;    
+    /*color:#ffffff;      
+    background-color:#f1e0c6;        	*/
+
+}
+.GeneralFieldSet
+{
+	border-left-color:Navy;
+	border-top-color:Navy;
+	border-right-color:Navy;
+	border-bottom-color:Navy;	
+}
+#divTitle
+{
+    position:absolute ;
+    left:800px;
+    top:8px;
+    /*width:650px;*/
+    /*height:250px;*/
+    }
+    
+    #divlogin
+{
+    position:absolute ;
+    left:280px;
+    top:190px;
+    width:500px;
+    height:350px;
+    padding:10;
+    outline-color:Blue ;
+    background-color:#f1e0c6;
+    border-width: 3px 3px 3px 3px;
+	border-style: solid;
+   }
+   
+   .GeneralTxt
+{
+	font-family:Arial,Verdana,Helvetica,Sans-Serif;
+	font-size:8pt;
+	vertical-align:top;
+	text-transform:none;
+	border-left-color:Black;
+	border-top-color:Black;
+	border-right-color:Black;
+	border-bottom-color:Black;
+}
+
+.GeneralTxtDisable
+{
+	font-family:Arial,Verdana,Helvetica,Sans-Serif;
+	font-size:8pt;
+	vertical-align:top;
+	border-width:2px 2px 2px 2px; 
+	text-transform:none;
+	background-color:linen; 
+	font-weight:bold;
+}
+
+.GeneralTxt
+{
+	font-family:Arial,Verdana,Helvetica,Sans-Serif;
+	font-size:8pt;
+	vertical-align:top;
+	text-transform:none;
+	border-left-color:Black;
+	border-top-color:Black;
+	border-right-color:Black;
+	border-bottom-color:Black;
+	font-weight:bold;
+}
+
+.AppHeadingCenter
+{
+	font-weight:bold;
+	font-family:Arial;
+	font-size:10pt;	
+}
+
+.AppHeadingLeft
+{
+	font-weight:bold;
+	font-family:Arial;
+	font-size:10pt;	
+}
+
+tr.BlockHeader
+{
+	background-image: url(Images/SectionHeader.gif);
+    color: #fffff1;
+    font-weight:bold;
+    text-align:center;
+    background-color: #916400;
+}
+ 
+ .button {
+    border: 1px solid #006;
+    background: #ccf;
+}
+.button:hover {
+    border: 1px solid #f00;
+    background: #eef;
+}
+
+.DefaultPage
+{
+	background-color:#b1a994;	
+	background-position: center center;
+	background-image:url(Images/kanchi.gif);
+	background-repeat:no-repeat;
+}
+
+.ModifyBtn
+{
+	font-family:Arial,Verdana,Helvetica,Sans-Serif;
+	font-size:8pt;	
+	border-style:none;	
+	background-color:#f1e0c6;/*#996666;*/			
+	background-image:url(Images/ImageModifyDR.gif);
+	background-position: left center;
+	background-repeat:no-repeat;
+	width:85px;
+	height:32px;
+}
+
+.SaveBtn
+{
+	font-family:Arial,Verdana,Helvetica,Sans-Serif;
+	font-size:8pt;	
+	border-style:none;	
+	background-color:#f1e0c6;/*#996666;*/		
+	color:#316363;
+	height:26px;
+	background-image:url(Images/ImageSaveDR.gif);
+	background-position: left center;
+	background-repeat:no-repeat;
+	width:85px;
+	height:32px;
+	
+}
+.CancelBtn
+{
+	font-family:Arial,Verdana,Helvetica,Sans-Serif;
+	font-size:8pt;	
+	border-style:none;	
+	background-color:#f1e0c6;/*#996666;*/		
+	color:#316363;
+	height:26px;
+	background-image:url(Images/ImageCancelDR.gif);
+	background-position: left center;
+	background-repeat:no-repeat;
+	width:85px;
+	height:32px;
+}
+
+.AddBtn
+{
+	font-family:Arial,Verdana,Helvetica,Sans-Serif;
+	font-size:8pt;		
+	background-color:#f1e0c6;/*#996666;*/				
+	background-image:url(Images/ImageAdddr.gif);
+	background-position: left center;
+	background-repeat:no-repeat;
+	border-style:none;
+	border-color:chocolate;
+	width:65px;
+	border-color:#915B00;
+	height:32px;
+}
+
+.DAddBtn
+{
+	font-family:Arial,Verdana,Helvetica,Sans-Serif;
+	font-size:8pt;		
+	background-color:#f1e0c6;/*#996666;*/				
+	background-image:url(Images/DImageAdddr.gif);
+	background-position: left center;
+	background-repeat:no-repeat;
+	border-style:none;
+	border-color:chocolate;
+	width:65px;
+	border-color:#915B00;
+	height:32px;
+}
+
+.DModifyBtn
+{
+	font-family:Arial,Verdana,Helvetica,Sans-Serif;
+	font-size:8pt;	
+	border-style:none;	
+	background-color:#f1e0c6;/*#996666;*/			
+	background-image:url(Images/DImageModifyDR.gif);
+	background-position: left center;
+	background-repeat:no-repeat;
+	width:85px;
+	height:32px;
+}
+
+.DSaveBtn
+{
+	font-family:Arial,Verdana,Helvetica,Sans-Serif;
+	font-size:8pt;	
+	border-style:none;	
+	background-color:#f1e0c6;/*#996666;*/		
+	color:#316363;
+	height:26px;
+	background-image:url(Images/DImageSaveDR.gif);
+	background-position: left center;
+	background-repeat:no-repeat;
+	width:85px;
+	height:32px;
+	
+}
+
+.DCancelBtn
+{
+	font-family:Arial,Verdana,Helvetica,Sans-Serif;
+	font-size:8pt;	
+	border-style:none;	
+	background-color:#f1e0c6;/*#996666;*/		
+	color:#316363;
+	height:26px;
+	background-image:url(Images/DImageCancelDR.gif);
+	background-position: left center;
+	background-repeat:no-repeat;
+	width:85px;
+	height:32px;
+}
+
+.SigninBtn
+{
+		
+	font-family:Arial,Verdana,Helvetica,Sans-Serif;
+	font-size:8pt;		
+	background-color:#f1e0c6;/*#996666;*/				
+	background-image:url(Images/SignIn.gif);
+	background-position: left center;
+	background-repeat:no-repeat;
+	border-style:none;
+	border-color:chocolate;
+	width:10px;
+	border-color:#915B00;
+	height:10px;
+}
+.SignoutBtn
+{
+	font-family:Arial,Verdana,Helvetica,Sans-Serif;
+	font-size:8pt;		
+	background-color:#f1e0c6;/*#996666;*/				
+	background-image:url(Images/SignOut.gif);
+	background-position: left center;
+	background-repeat:no-repeat;
+	border-style:none;
+	border-color:chocolate;
+	width:65px;
+	border-color:#915B00;
+	height:32px;
+}
+.DSignInBtn
+{
+	font-family:Arial,Verdana,Helvetica,Sans-Serif;
+	font-size:8pt;		
+	background-color:#f1e0c6;/*#996666;*/				
+	background-image:url(Images/DSignIn.gif);
+	background-position: left center;
+	background-repeat:no-repeat;
+	border-style:none;
+	border-color:chocolate;
+	width:65px;
+	border-color:#915B00;
+	height:32px;
+}
+
+.AddBtnMouseOver
+{
+	font-family:Arial,Verdana,Helvetica,Sans-Serif;
+	font-size:8pt;		
+	border-style:outset;		
+	background-color:#f1e0c6;/*#996666;*/					
+	background-image:url(Images/ImageAddDR.GIF);
+	background-position: left center;
+	background-repeat:no-repeat;
+	width:65px;
+	height:32px;	
+	cursor:hand;
+}
+
+.ModifyBtnMouseOver
+{
+	font-family:Arial,Verdana,Helvetica,Sans-Serif;
+	font-size:8pt;		
+	border-style:outset;
+	background-color:#f1e0c6;/*#996666;*/		
+	border-color:#f1e0c6;	
+	background-image:url(Images/ImageModifyDR.GIF);
+	background-position: left center;
+	background-repeat:no-repeat;
+	width:85px;
+	height:32px;
+	cursor:hand;
+}
+
+.SaveBtnMouseOver
+{
+	font-family:Arial,Verdana,Helvetica,Sans-Serif;
+	font-size:8pt;		
+	border-style:outset;
+	background-color:#f1e0c6;/*#996666;*/		
+	color:#316363;
+	height:26px;
+	background-image:url(Images/ImageSaveDR.GIF);
+	background-position: left center;
+	background-repeat:no-repeat;
+	width:85px;
+	height:32px;
+	cursor:hand;
+}
+.CancelBtnMouseOver
+{
+	font-family:Arial,Verdana,Helvetica,Sans-Serif;
+	font-size:8pt;		
+	border-style:outset;
+	background-color:#f1e0c6;/*#996666;*/		
+	color:#316363;
+	height:26px;
+	background-image:url(Images/ImageCancelDR.GIF);
+	background-position: left center;
+	background-repeat:no-repeat;
+	width:85px;
+	height:32px;
+	cursor:hand;
+}
+
+.ErrorMessage
+{
+	font-family:Arial,Verdana,Helvetica,Sans-Serif;
+	font-size:10pt;
+	font-weight:bold;	
+	color:#ff0000;
+}
+
+.GenerateBtn
+{
+	font-family:Arial,Verdana,Helvetica,Sans-Serif;
+	font-size:8pt;		
+	border-style:outset;		
+	background-color:#f1e0c6;/*#996666;*/					
+	background-image:url(Images/diagnosis1.JPG);
+	background-position: left center;
+	background-repeat:no-repeat;
+	width:65px;
+	height:32px;	
+	cursor:hand;
+}
+.DGenerateBtn
+{
+	font-family:Arial,Verdana,Helvetica,Sans-Serif;
+	font-size:8pt;	
+	border-style:none;	
+	background-color:#f1e0c6;/*#996666;*/		
+	color:#316363;
+	height:26px;
+	background-image:url(Images/DImageSaveDR.gif);
+	background-position: left center;
+	background-repeat:no-repeat;
+	width:65px;
+	height:32px;
+	
+}
+
+.Savebutton {
+    border: 1px solid #006;
+    background:#ffd7ff;
+    color:Blue;
+    cursor:hand;
+    
+    
+}
+.Savebutton:hover {
+    border: 1px solid #f00;
+    background: #eef;
+}
+.div2
+{
+/*font-size: 180%;
+    font-family: Helvetica;
+    font-weight: Bold;
+    color: #444444*/
+font: bold italic 2em/1em "Times New Roman", "MS Serif", "New York", serif;
+font-size: 160%;
+
+/*margin: 0;
+
+padding: 0;*/
+
+color: #444444;
+
+border-top: solid #e7ce00 medium;
+
+border-bottom: dotted #e7ce00 thin;
+
+/*width: 600px;*/
+   }
+   
+   .tb7 {
+	/*width: 221px;*/
+	/*background: transparent url('images/bg.jpg') no-repeat;*/
+	/*color : #747862;
+	height:20px;
+	border:0;*/
+	/*padding:4px 8px;
+	margin-bottom:0px;*/
+	/*color: #781351;*/
+/*background: #fee3ad;*/
+font-size:12pt;
+border: 1px solid #781351
+}
+
+.tcat
+{
+	background: #2C353C url(Images/gradient_tcat.gif) repeat-x top right;
+	color: #FFFFFF;
+	font-size: 10pt;
+	font-weight: bold;
+	padding: 0 0 0 0px;
+	line-height: 20px;
+	width:100%;
+	cursor:pointer; 
+}
+.tablerowlightblue
+{
+	font-family: Arial, Verdana, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	font-style: normal;
+	color: black;
+	height: 30px;
+	background-color: #e5f4fb;
+}
+
+.staticMenuItemStyle
+{
+ 
+    background-color: #507CD1;
+    border: solid 1px #000;
+    color: #507CD1;
+    text-align: center;
+    height: 30px;
+}
+    .staticSelectedStyle
+{
+    background-color: #CCFF33;
+    color: #003300;
+    border-bottom: solid 1px #eee;
+    z-index: 100;
+}
+    .staticHoverStyle
+{
+    background-color: #00CC66;
+}
+   
+    .substaticMenuItemStyle
+{
+    width: 89px;
+    background-color: #507CD1;
+    text-align: center;
+    color: #507CD1;
+}
+    .substaticHoverStyle
+{
+    background-color: #99FF99;
+    border: solid 1px #A68F8F;
+    color: #009900;
+}

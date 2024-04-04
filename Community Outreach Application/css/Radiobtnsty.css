@@ -1,0 +1,55 @@
+﻿/* Style for the custom RadioButtonList container */
+.custom-radiobuttonlist {
+	display: inline-block;
+}
+
+	/* Hidden default radio input */
+	.custom-radiobuttonlist input[type="radio"] {
+		display: none;
+	}
+
+	/* Custom radio button design */
+	.custom-radiobuttonlist label {
+		display: inline-block;
+		padding: 10px 20px; /* Adjust padding to control button size */
+		background-color: #ccc;
+		border: none;
+		border-radius: 5px;
+		cursor: pointer;
+		transition: background-color 0.3s;
+	}
+
+	/* Checked state */
+	.custom-radiobuttonlist input[type="radio"]:checked + label {
+		background-color: #2bafcb; /* Change to the desired color */
+		color: white; /* Change text color when checked */
+	}
+
+
+/* Style for the custom RadioButtonList container */
+.custom-radiobuttonlist-alt {
+	display: inline-block;
+}
+
+	/* Hidden default radio input */
+	.custom-radiobuttonlist-alt input[type="radio"] {
+		display: none;
+	}
+
+	/* Custom radio button design */
+	.custom-radiobuttonlist-alt label {
+		display: inline-block;
+		padding: 8px 26px; /* Adjust padding to control button size */
+		background-color: #e6e6e6;
+		border: 2px solid #999;
+		border-radius: 12px;
+		cursor: pointer;
+		transition: background-color 0.3s, border-color 0.3s;
+	}
+
+	/* Checked state */
+	.custom-radiobuttonlist-alt input[type="radio"]:checked + label {
+		background-color: #28a745; /* Change to the desired color */
+		border-color: #28a745;
+		color: white; /* Change text color when checked */
+	}

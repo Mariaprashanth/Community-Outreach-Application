@@ -1,0 +1,22 @@
+﻿.threedivsec {
+	display: flex;
+	justify-content: center; /* Center the form horizontally */
+}
+
+.left,
+.center,
+.right {
+	flex-basis: 33.33%; /* Divide the form into three equal sections */
+}
+
+.left {
+	/* Styles for the left section */
+}
+
+.center {
+	/* Styles for the center section */
+}
+
+.right {
+	/* Styles for the right section */
+}

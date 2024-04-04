@@ -1,0 +1,52 @@
+﻿.basic-button {
+	display: inline-block;
+	padding: 10px 20px;
+	background-color: #3498db;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	text-align: center;
+	text-decoration: none;
+	transition: background-color 0.3s ease;
+}
+
+	.basic-button:hover {
+		background-color: #2980b9;
+	}
+
+.outlined-button {
+	display: inline-block;
+	padding: 10px 20px;
+	background-color: transparent;
+	border: 2px solid #34db8e;
+	color: #3498db;
+	border-radius: 5px;
+	cursor: pointer;
+	text-align: center;
+	text-decoration: none;
+	transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+	.outlined-button:hover {
+		background-color: #3498db;
+		color: white;
+		border-color: #2980b9;
+	}
+
+.gradient-button {
+	display: inline-block;
+	padding: 10px 20px;
+	background-image: linear-gradient(to right, #ff9a9e, #f5c4fa, #c4eafa, #9aff9d);
+	color: white;
+	border: none;
+	border-radius: 25px;
+	cursor: pointer;
+	text-align: center;
+	text-decoration: none;
+	transition: background-image 0.3s ease;
+}
+
+	.gradient-button:hover {
+		background-image: linear-gradient(to right, #ff9a9e, #fad0c4, #fad0c4, #ff9a9e);
+	}
